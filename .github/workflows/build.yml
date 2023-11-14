@@ -14,7 +14,7 @@ on:
       - Dockerfile
 jobs:
   build_docker_image:
-    name: build_docker_image
+    name: Build Docker Image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
