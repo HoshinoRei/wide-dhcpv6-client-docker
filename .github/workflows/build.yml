@@ -1,5 +1,9 @@
 name: Publish Docker Image
 on:
+  pull_request:
+    paths:
+      - .github/workflows/build.yml
+      - Dockerfile
   push:
     branches:
       - master
@@ -35,6 +39,7 @@ jobs:
             latest=true
           tags: |
             type=edge,branch=master
+            type=ref,event=pr
             type=ref,event=tag
       - name: Build and push
         uses: docker/build-push-action@v5
