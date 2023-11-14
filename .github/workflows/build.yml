@@ -9,8 +9,9 @@ on:
       - master
     tags:
       - 'v*'
-    paths-ignore:
-      - LICENSE
+    paths:
+      - .github/workflows/build.yml
+      - Dockerfile
 jobs:
   build:
     name: build_docker_image
