@@ -2,7 +2,7 @@ version: 2
 updates:
   - package-ecosystem: docker
     commit-message:
-      prefix: chore(dockerfile)
+      prefix: chore(Dockerfile)
     directory: /
     open-pull-requests-limit: 1000
     schedule:
