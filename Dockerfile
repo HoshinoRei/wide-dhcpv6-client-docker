@@ -1,4 +1,4 @@
-FROM debian:12-slim
+FROM debian:13-slim
 LABEL org.opencontainers.image.source=https://github.com/HoshinoRei/wide-dhcpv6-client-docker
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y wide-dhcpv6-client && \
